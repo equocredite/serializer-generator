@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Set;
 
 public class ReflectionUtils {
+    private ReflectionUtils() {}
+
     private static final Set<Class<?>> PRIMITIVE_WRAPPER_TYPES = Set.of(Byte.class, Short.class, Integer.class,
             Long.class, Float.class, Double.class, Character.class, Boolean.class);
 
