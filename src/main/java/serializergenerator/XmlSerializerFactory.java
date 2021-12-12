@@ -47,7 +47,6 @@ public class XmlSerializerFactory<T> implements SerializerFactory<T> {
             var lines = reader.lines().collect(Collectors.toList());
             return String.join("\n", lines);
         } catch (IOException e) {
-            e.printStackTrace();
             return null;
         }
     }
@@ -122,7 +121,6 @@ public class XmlSerializerFactory<T> implements SerializerFactory<T> {
                     .newInstance();
         } catch (InvocationTargetException | NoSuchMethodException | ClassNotFoundException | InstantiationException
                 | IllegalAccessException e) {
-            e.printStackTrace();
             return null;
         }
     }
