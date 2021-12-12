@@ -1,5 +1,6 @@
 package serializergenerator;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -59,7 +60,12 @@ class Car {
 }
 
 public class XmlSerializerFactoryTest {
-    private final Serializer<Person> serializer = new XmlSerializerFactory<>(Person.class).createSerializer();
+    private Serializer<Person> serializer;
+
+    @BeforeAll
+    void setup() {
+        serializer = new XmlSerializerFactory<>(Person.class).createSerializer();
+    }
 
     @Test
     public void simpleTest() {

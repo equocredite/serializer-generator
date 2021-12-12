@@ -1,7 +1,6 @@
 package serializergenerator;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -35,7 +34,7 @@ public class ReflectionUtils {
         for (Field field : clazz.getDeclaredFields()) {
             String getterName = buildGetterNameForField(field);
             try {
-                Method getter = clazz.getMethod(getterName);
+                clazz.getMethod(getterName);
                 fieldToGetterName.put(field, getterName);
             } catch (NoSuchMethodException ignored) {}
         }
