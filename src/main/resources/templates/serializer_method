@@ -1,0 +1,5 @@
+private String serialize{0}({1} o) '{'
+    StringBuilder sb = new StringBuilder();
+    {2}
+    return sb.toString();
+'}'

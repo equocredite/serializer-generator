@@ -1,0 +1,1 @@
+sb.append("<{0}>").append(String.valueOf(o.{1}())).append("</{0}>");

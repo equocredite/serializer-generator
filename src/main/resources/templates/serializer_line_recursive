@@ -1,0 +1,1 @@
+sb.append("<{0}>").append(o.{1}() == null ? null : serialize{2}(o.{1}())).append("</{0}>");

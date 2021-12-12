@@ -1,0 +1,10 @@
+package serializergenerator;
+
+public class {0}ToXmlSerializer implements Serializer<{1}> '{'
+    {2}
+
+    @Override
+    public String serialize({1} o) '{'
+        return serialize{0}(o);
+    '}'
+'}'
