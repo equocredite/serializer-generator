@@ -46,7 +46,7 @@
                 <version>2.22.0</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <allure.results.directory>target/allure-report</allure.results.directory>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
