@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+      - name: create directory
+        file:
+            path: "{{ app_dir }}"
+            state: directory
+      - name: copy jar
+        copy:
+            src: "{{ local_jar_path }}"
+            dest: "{{ app_dir }}/{{ jar_name }}"
